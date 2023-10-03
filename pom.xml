@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <!-- Define project coordinates -->
+    <groupId>com.example</groupId>
+    <artifactId>sonarqube-golang-project</artifactId>
+    <version>1.0.0</version>
+
+    <!-- Define project properties -->
+    <properties>
+        <!-- Specify the Go version you are using -->
+        <go.version>1.17</go.version>
+    </properties>
+
+    <!-- Define project dependencies -->
+    <dependencies>
+        <!-- Add any necessary dependencies here -->
+    </dependencies>
+
+    <!-- Configure the SonarQube scanner plugin -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.9.0.2155</version>
+            </plugin>
+        </plugins>
+    </build>
+</project>
